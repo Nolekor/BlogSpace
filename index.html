@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +14,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <nav class="nav-bar"><h3>BLOGSPACE</h3></nav>
+
+    <form id="new-post">
+      <label for="title-post">Title:</label>
+      <input type="text" name="title-post" id="title-post" />
+      <label for="text-post">Body:</label>
+      <textarea name="text-post" id="text-post"></textarea>
+      <button id="btn-post">Post</button>
+    </form>
+
+    <div id="container"></div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
